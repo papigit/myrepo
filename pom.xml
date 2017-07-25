@@ -20,12 +20,15 @@
  <plugin>
           <groupId>org.apache.maven.plugins</groupId>
          <artifactId>maven-war-plugin</artifactId>
- <configuration>
-         <outputDirectory>/opt/test</outputDirectory>
-  </configuration>
-  </plugin>
-  </plugins>
-  <finalName>WebProject</finalName>
-  </build>
-
+ </plugin>
+ </plugins>
+ <finalName>WebProject</finalName>
+</build>
+<repositories>
+    <repository>
+        <groupId>mygroupid</groupId>
+        <version>myversion</version>
+		<url>http://ansible.abc.com:8081/repository/maven-public</url>
+    </repository>
+</repositories>
 </project>
