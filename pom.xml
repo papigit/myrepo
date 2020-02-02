@@ -20,15 +20,12 @@
  <plugin>
           <groupId>org.apache.maven.plugins</groupId>
          <artifactId>maven-war-plugin</artifactId>
- </plugin>
- </plugins>
- <finalName>WebProject</finalName>
-</build>
-<repositories>
-    <repository>
-       <id>acme-nexus-releases</id>
-       <name>acme nexus</name>
-       <url>http://ansible.abc.com:8081/repository/mynexusrepo/</url>
-    </repository>
-</repositories>
+ <configuration>
+         <outputDirectory>/opt/test</outputDirectory>
+  </configuration>
+  </plugin>
+  </plugins>
+  <finalName>WebProject</finalName>
+  </build>
+
 </project>
